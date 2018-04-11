@@ -3,7 +3,7 @@
 ### 效果
 先看下要实现的效果
 
-![这里写图片描述](https://img-blog.csdn.net/20180411135646138?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fpbml5aXdhbjEyMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://github.com/ainiyiwan/DynamicRecyclerViewItemHeight/blob/master/png/dynamic.gif)
 ### 问题
 **可以看到中间那条灰线的高度是动态变化的**，一开始觉得很好实现，直接获取Item的高度的然后设置给View不就好了吗？
 问题来了，获取Item的高度始终为0。原因是ItemView还没有测量完成，高度自然为0。我们都知道View绘制的顺序是onMeasure()—— onLayout()—— onDraw()，所以第一种解法来了，手动让ItemView测量一下不就好了吗？
