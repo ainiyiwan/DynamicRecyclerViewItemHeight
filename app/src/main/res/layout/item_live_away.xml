@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_live_view"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#e1e1e1"/>
+
+    <TextView
+        android:id="@+id/text_live_text"
+        style="@style/TextView20"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/text_live_time"
+        android:text="主裁判终场哨音吹响，全场比赛 结束了！"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/text_live_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="19dp"
+        android:minHeight="10dp"
+        android:padding="1dp"
+        android:layout_centerInParent="true"
+        android:background="#ffc13c"
+        android:gravity="center"
+        android:text="80'"
+        android:textColor="#fff"
+        android:textSize="10sp"/>
+
+</RelativeLayout>
